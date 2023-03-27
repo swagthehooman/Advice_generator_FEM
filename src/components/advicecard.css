@@ -1,0 +1,76 @@
+:root{
+    --clr-neutral-Grayish-Blue: hsl(217, 19%, 38%);
+    --clr-neutral-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --clr-neutral-Dark-Blue: hsl(218, 23%, 16%);
+
+    --clr-primary-Light-Cyan: hsl(193, 38%, 86%);
+    --clr-primary-Neon-Green: hsl(150, 100%, 66%);
+
+    --fs-base: 28px;
+    --ff-base:'Manrope', sans-serif;
+}
+
+main{
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:var(--clr-neutral-Dark-Grayish-Blue);
+    border-radius: 1rem;
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    position: relative;
+}
+
+.advice_number{
+    font-size: 12px;
+    color: var(--clr-primary-Neon-Green);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.advice_text{
+    color: var(--clr-primary-Light-Cyan);
+    font-weight: 800;
+    padding: 2rem 0 2rem 0;
+}
+
+.divider{
+    padding: 0 0 2rem 0;
+}
+
+button{
+    border-radius: 50%;
+    background-color: var(--clr-primary-Neon-Green);
+    padding: 1rem;
+    border: none;
+    position: absolute;
+    bottom: -2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 1rem var(--clr-primary-Neon-Green);
+}
+
+/* for desktop view */
+@media screen and (min-width:500px) { 
+    .divider{
+        content: url('./images/pattern-divider-desktop.svg');
+    }
+    main{
+        width: 520px;
+    }
+}
+
+/* for mobile view */
+@media screen and (max-width:600px) {
+    .divider {
+        content: url('./images/pattern-divider-mobile.svg');
+    }
+    main{
+        width: 400px;
+    }
+}
