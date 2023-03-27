@@ -58,7 +58,7 @@ button:hover{
 /* for desktop view */
 @media screen and (min-width:500px) { 
     .divider{
-        content: url('./images/pattern-divider-desktop.svg');
+        content: url('../images/pattern-divider-desktop.svg');
     }
     main{
         width: 520px;
@@ -68,7 +68,7 @@ button:hover{
 /* for mobile view */
 @media screen and (max-width:600px) {
     .divider {
-        content: url('./images/pattern-divider-mobile.svg');
+        content: url('../images/pattern-divider-mobile.svg');
     }
     main{
         width: 400px;
